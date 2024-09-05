@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Angkon</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+    <h1>Hello World </h1>
+    <h2 class="qpy">Hello World </h2>
+    <h3 class="qpy">Hello World </h3>
+    <p>This tag is used for writing <br> something
+        in a paragraph
+    </p>
+    <!-- <br> is used to make a linebreak -->
+    <!-- lorem is used to generate texts randomly -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+        <!-- b tag: Used to make things bold -->
+        <b>Consequatur, quod quia? Necessitatibus temporibus, magni minus eveniet</b><br> iure consectetur odit, quo nemo
+        <!-- i tag: to make something italic, em tag also works like same --> <br>
+        <i>earum omnis sint quas sed ipsum! Totam, omnis modi? Porro vel unde delectus saepe repellat similique quaerat</i><br>
+        <!-- small tag: make something small -->
+        <small>enim atque nostrum eaque consequatur hic dicta fuga iusto,</small> <br>
+        <!-- sup tag: to show powers -->
+        10 <sup>2</sup> = 100 <br>
+        10 <sub>2</sub> <br>
+        minus autem repudiandae. Saepe dolorum, tempora
+        incidunt non ab explicabo eaque quam.
+    </p>
+    <p class="abcd">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    </p>
+<p class="xyz">Lorem ipsum dolor sit amet consectetur adipisicing elit. <h2 
+class="abcdf
+">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente odit cupiditate soluta! Nisi deleniti vel non amet cupiditate sapiente libero!</h2>Libero, delectus. Corporis a et eos quis optio tenetur, dolores ut nisi laudantium, assumenda quam possimus fuga accusantium eligendi enim at dolore tempore veniam voluptate? Autem quis quibusdam eius dolorum eveniet rem, dignissimos maxime nostrum, doloribus pariatur, magni ex tenetur repellendus dolores.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, esse.</p>
+
+</body>
+
+</html>
