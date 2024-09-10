@@ -1,0 +1,83 @@
+Flexbox is used to arrange items in rows or columns, and it helps distribute space and align items within a container.
+CSS Flexbox properties: 
+
+1. Container (Parent) Properties
+These properties apply to the container that holds the items (children).
+
+display: flex;
+This activates Flexbox on the container. Without this, the other Flexbox properties won’t work.
+
+flex-direction
+This defines the direction of the items inside the container.
+
+row – items are arranged in a row (default).
+row-reverse – items are arranged in a reversed row.
+column – items are arranged in a column (stacked vertically).
+column-reverse – items are arranged in a reversed column.
+justify-content
+Aligns items horizontally (left to right) when using row, or vertically (top to bottom) when using column.
+
+flex-start – items start at the beginning of the container (default).
+flex-end – items end at the end of the container.
+center – items are centered in the container.
+space-between – spaces between items are evenly distributed, with no space at the edges.
+space-around – spaces are distributed with some space at the edges.
+space-evenly – spaces between items and at the edges are distributed evenly.
+align-items
+Aligns items vertically (in a row) or horizontally (in a column).
+
+stretch – items stretch to fill the container (default).
+flex-start – items align at the top of the container.
+flex-end – items align at the bottom of the container.
+center – items align at the center of the container.
+baseline – items align based on the text baseline (useful for aligning text).
+align-content
+This property aligns multiple rows of items within the container (when there's space left).
+
+flex-start – rows align to the top.
+flex-end – rows align to the bottom.
+center – rows are centered.
+space-between – rows are spread out, no space at the edges.
+space-around – rows are spread out with space at the edges.
+stretch – rows stretch to fill the container (default).
+flex-wrap
+Controls whether items stay on one line or wrap onto multiple lines when the container is too small.
+
+nowrap – items stay on one line (default).
+wrap – items move to the next line if needed.
+wrap-reverse – items wrap to the next line but in reverse order.
+gap
+Adds space between items (similar to margin but easier to control).
+
+Example: gap: 10px; adds 10px space between each item.
+2. Item (Child) Properties
+These properties apply to the items inside the Flexbox container.
+
+order
+Sets the order in which the items appear. By default, all items have an order of 0. You can change this to control which item appears first or last.
+
+Example: order: 1; will move the item to the end of the line.
+flex-grow
+Controls how much space an item should take compared to other items. The default is 0 (no extra space).
+
+Example: flex-grow: 1; will allow the item to take up extra space if available.
+flex-shrink
+Controls how much an item should shrink when there isn’t enough space. The default is 1, meaning the item can shrink to fit the container.
+
+Example: flex-shrink: 0; prevents the item from shrinking.
+flex-basis
+Sets the initial size of an item before it grows or shrinks. It acts like setting a width but works with Flexbox.
+
+Example: flex-basis: 200px; will make the item 200px wide.
+align-self
+Allows an individual item to override the align-items property. This is useful if you want one item to align differently from the others.
+
+auto – uses the container's align-items setting (default).
+flex-start – aligns this item at the top (or left).
+flex-end – aligns this item at the bottom (or right).
+center – centers this item.
+stretch – stretches this item to fill the space.
+
+Summary:
+Container properties like justify-content and align-items affect how the items are laid out.
+Item properties like order, flex-grow, and align-self control the behavior of individual items.
