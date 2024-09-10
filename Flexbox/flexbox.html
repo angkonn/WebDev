@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            padding: 0 20px 30px 0;
+            line-height: 1.4;
+        }
+
+        .flex-container {
+            display: flex;
+            width: 100%;
+            height: 500px;
+            border: 2px solid slateblue;
+            /* flex-wrap: wrap; */
+            align-content: flex-start;
+            /* align-items does the same but there will be gap between upper and lower row boxes */
+            flex-flow: row-reverse;
+
+        }
+
+        .flex-item {
+            width: 75px;
+            height: 75px;
+            background-color: lightskyblue;
+            border: 2px solid darkblue;
+            text-align: centre;
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+            line-height: 1.4;
+
+        }
+
+        #flex-item-1 {
+            background-color: lightpink;
+            order: 1;
+            flex-basis: 200px;
+            /*highest width */
+
+        }
+
+        #flex-item-2 {
+            background-color: lightskyblue;
+            order: 3;
+             flex-grow: 2; /*will grow 2x than others */
+        }
+
+        #flex-item-3 {
+            background-color: lightgreen;
+            order: 7;
+            flex: 3 2 250px;
+        }
+
+        #flex-item-4 {
+            background-color: darkkhaki;
+            order: 10;
+        }
+
+        #flex-item-5 {
+            background-color: lightcoral;
+            order: 11;
+             flex-shrink: 3; /*will shrink faster than others but flex wrap needs to be commented out */
+        }
+
+        #flex-item-6 {
+            background-color: rgb(128, 150, 240);
+            align-self: center;
+        }
+
+        #flex-item-7 {
+            background-color: rgb(25, 242, 159);
+        }
+
+        #flex-item-8 {
+            background-color: rgb(0, 60, 19);
+        }
+
+        #flex-item-9 {
+            background-color: rgb(106, 154, 84);
+        }
+
+        #flex-item-10 {
+            background-color: rgb(44, 44, 231);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item" id="flex-item-1">1</div>
+        <div class="flex-item" id="flex-item-2">2</div>
+        <div class="flex-item" id="flex-item-3">3</div>
+        <div class="flex-item" id="flex-item-4">4</div>
+        <div class="flex-item" id="flex-item-5">5</div>
+        <div class="flex-item" id="flex-item-6">6</div>
+        <div class="flex-item" id="flex-item-7">7</div>
+        <div class="flex-item" id="flex-item-8">8</div>
+        <div class="flex-item" id="flex-item-9">9</div>
+        <div class="flex-item" id="flex-item-10">10</div>
+    </div>
+</body>
+
+</html>
