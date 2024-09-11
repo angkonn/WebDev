@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: repeat(3,1fr); */
+            /* to make this reponsive: */
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr) );
+            grid-gap: 20px;
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns: minmax(50px,auto);
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+        .items{
+            background-color: lightcoral;
+            border: 3px solid green;
+            border-radius: 3px;
+        }
+        #item2{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .nested-item{
+            background-color: rgb(155, 205, 145);
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 3px;
+
+        }
+        #item3{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(50px,1fr));
+            grid-auto-rows: minmax(10px,auto);
+            grid-auto-columns: minmax(10px,auto);
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item1">Box 1</div>
+        <div class="items" id="item2">Box 2</div>
+        <div class="items" id="item3"><div class="nested-item">box in the box 1</div>
+        <div class="nested-item">box in the box 2</div>
+        <div class="nested-item">box in the box 3</div>
+        <div class="nested-item">box in the box 4</div></div>
+        <div class="items">Box 4</div>
+        <div class="items">Box 5</div>
+    </div>
+</body>
+</html>
