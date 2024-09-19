@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    padding: 10px 0 0 0;
+
+
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+nav {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #292545;
+    height: 70px;
+    transition: height .3s;
+    overflow: hidden;
+    font-size: 17px;
+    font-weight: 480;
+    padding-top: 8px;
+
+
+}
+
+nav a {
+
+    margin: none;
+    display: block;
+    text-decoration: none;
+    padding: 11px 40px;
+    /* text-align: center; */
+    /* float: left; */
+    color: white;
+
+
+
+}
+
+nav:hover {
+    height: 260px;
+
+}
+
+nav a:hover {
+    background-color: black;
+    color: aqua;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+section:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+/* section {
+    text-align: center;
+    padding-top: 40px;
+    min-height: 100vh;
+} */
+
+video {
+    padding: 10px;
+}
+
+iframe {
+    height: 75vh;
+    padding: 0px 5px;
+}
+
+img {
+    padding: 0px 20px;
+}
+
+section h5 {
+    margin: 40px;
+}
+
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+    padding: 50px;
+}
+
+.banner {
+    background-image: url(/animated_logo.gif);
+    /* Your animated GIF */
+    width: 500px;
+    /* Desired width */
+    height: 200px;
+    /* Desired height */
+    margin: 0px 5px 5px ;
+    /* Adjust margins as needed */
+    overflow: hidden;
+    /* Hide overflow to crop the GIF */
+    background-size: cover;
+    /* Scale the background image to cover the div */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent repeating of the image */
+    /* background-attachment: fixed; */
+}
+
+.flex {
+    margin-left: auto;
+}
+
+span {
+    padding: 10px 55px;
+    border-radius: 20px;
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(36, 36, 81, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* external css: flickity.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+
+.carousel-cell {
+    width: 66%;
+    margin-right: 10px;
+    /* background: #8C8; */
+    border-radius: 5px;
+    /* counter-increment: carousel-cell; */
+}
+
+.carousel-cell video {
+    width: 400px;
+    height: 400px;
+
+}
+
+.carousel-cell img {
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+
+}
+
+.carousel-cell iframe {
+    width: 700px;
+    height: 400px;
+}
+
+.profile_pic {
+    height: 200px;
+    width: 223px;
+    border-radius: 50%;
+}
+
+.profile_name {
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    margin: 20px 0px 30px 0px;
+}
+
+.icons a {
+    background-color: rgb(205, 214, 221);
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin: 5px 10px;
+    text-decoration: none;
+    transition: padding .2s ,font-size .2s;
+}
+
+.varsity {
+    color: rgb(115, 95, 161);
+    text-decoration: none;
+}
+
+.varsity:hover {
+    cursor: pointer;
+    color: rgb(58, 49, 125);
+    text-decoration: none;
+}
+
+.f:hover {
+    background-color: rgb(36, 78, 216);
+    color: white;
+    font-weight: 600;
+    width: 400px;
+    padding: 12px 30px 12px 30px;
+    font-size: 19px;
+}
+
+.i:hover {
+    background-color: rgb(234, 98, 104);
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px 12px 30px;
+    font-size: 19px;
+}
+
+.l:hover {
+    background-color: rgb(26, 58, 163);
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px 12px 30px;
+    font-size: 19px;
+}
+
+.g:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px 12px 30px;
+    font-size: 19px;
+}
+.about{
+    margin: 50px;
+
+}
+.title{
+    font-size: 1.45em;
+    padding: 0px 10px;
+    color: rgb(11, 11, 11);
+
+}
+.content{
+    color: #292545;
+    font-weight: 900;
+    font-size: 17px;
+    text-align: left;
+    padding-bottom: 10px 0px 20px 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
