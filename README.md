@@ -14,7 +14,7 @@
 
     /* Set up the body style */
     body {
-      font-family: Arial, sans-serif;
+      font-family:
       height: 100vh;
       display: flex;
       justify-content: center;
