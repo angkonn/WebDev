@@ -1,19 +1,90 @@
-# LearningWebDev
-A journey through learning web development. Projects and exercises built with HTML, CSS, and JavaScript.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout Example</title>
+  <style>
+    /* Reset some default margins */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-This repository documents my web development journey as I learn and build projects using HTML, CSS, and JavaScript.
+    /* Set up the body style */
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-## Technologies
-- **HTML**: Building the structure of web pages.
-- **CSS**: Styling web pages for layout, colors, and design.
-- **JavaScript**: (Coming Soon) Making web pages interactive and dynamic.
+    /* Flex container */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 90vh;
+      width: 90vw;
+    }
 
-## Projects and Exercises
-- **HTML & CSS Projects**: Showcasing initial projects built to practice layout and design principles.
-- **JavaScript**: (To be added) Interactive elements and dynamic functionalities.
+    /* Navigation column on the left */
+    .nav {
+      background-color: #c5e1a5;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      flex: 0 0 20%; /* 20% width for the nav */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
 
-## Future Plans
-- Dive deeper into JavaScript, focusing on DOM manipulation, events, and API integration.
-- Learn frameworks like React or Vue to build complex web applications.
+    /* Content column on the right */
+    .content {
+      display: flex;
+      flex-direction: column;
+      flex: 1; /* Take the remaining space (80%) */
+    }
 
-Stay tuned for updates as I continue to improve and expand my skills in web development!
+    /* The layout for header, article, and footer */
+    .header {
+      background-color: #a3d673;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      flex: 0 1 100px;
+    }
+
+    .article {
+      background-color: white;
+      padding: 20px;
+      flex: 1;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #a3d673;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      flex: 0 1 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">Nav</nav>
+    <div class="content">
+      <header class="header">Header</header>
+      <article class="article">Article</article>
+      <footer class="footer">Footer</footer>
+    </div>
+  </div>
+</body>
+</html>
